@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DoctorTime">
+        <item>8-10am</item>
+        <item>10-12am</item>
+        <item>12-2pm</item>
+        <item>2-4pm</item>
+        <item>4-6pm</item>
+        <item>6-8pm</item>
+    </string-array>
+</resources>

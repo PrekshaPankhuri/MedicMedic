@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/register_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".HospitalRegister">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="101dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="84dp"
+                    android:layout_height="83dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:text="Here’s\nyour first\nstep with \nus! "
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="114dp"
+                    android:layout_height="97dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/registericon1" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputName"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <EditText
+                            android:id="@+id/HospitalRegName"
+                            style="@style/modifiedEditText"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <EditText
+                        android:id="@+id/HospitalRegAddress"
+                        style="@style/modifiedEditText"
+                        android:hint="Address"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegCity"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegMobile"
+                        style="@style/modifiedEditText"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegPassword"
+                        style="@style/modifiedEditText"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegCylinders"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Oxygen Cylinders Available"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegBlood"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Blood Bank available? Yes/No"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegEmail"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="E-mail"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegBeds"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="COVID Beds Currently Available"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/HospitalRegVaccine"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Registered as Vaccine Centre? YES/NO"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/cirRegisterButtonHospital"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:text="Register"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputMobile"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/Haveanacc"
+                        style="@style/parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:onClick="onLoginClick"
+                        android:text="Already have an account?"
+                        android:textAlignment="center"
+                        android:textColor="@color/themeColor"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="12"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:onClick="onLoginClick"
+        android:src="@drawable/ic_back_img" />
+</RelativeLayout>

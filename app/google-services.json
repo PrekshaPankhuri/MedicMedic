@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680909894160",
+    "project_id": "medic-from-home-app",
+    "storage_bucket": "medic-from-home-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680909894160:android:17323019dcee317d63d095",
+        "android_client_info": {
+          "package_name": "coding.insight.cleanuiloginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680909894160-ur22hc3ptvc9gnj9006o0sje6baft5gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY2k2V7lyau_wbOAbfZoRx34E7fUREU6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680909894160-ur22hc3ptvc9gnj9006o0sje6baft5gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
