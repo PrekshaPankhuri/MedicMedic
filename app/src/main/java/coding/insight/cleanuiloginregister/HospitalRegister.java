@@ -34,7 +34,7 @@ public class HospitalRegister extends AppCompatActivity {
     DatabaseReference userDatabaseRef;
     ProgressDialog loader;
     String us="hospital";
-    TextView Haveanacc;
+    TextView Haveanacc , messageMain;
     String low;
 
     @Override
@@ -59,12 +59,14 @@ public class HospitalRegister extends AppCompatActivity {
         HospitalVaccine=findViewById(R.id.HospitalRegVaccine);
         HospitalRegister=findViewById(R.id.cirRegisterButtonHospital);
         Haveanacc = findViewById(R.id.Haveanacc);
+        messageMain = findViewById(R.id.messageMain);
         fauth=FirebaseAuth.getInstance();
         loader=new ProgressDialog(this);
 
         int ActNo = getIntent().getIntExtra("Act",1);
         if(ActNo == 1){
             Haveanacc.setVisibility(View.GONE);
+            messageMain.setText("Add New Hospital");
         }
 
         HospitalRegister.setOnClickListener(new View.OnClickListener() {
@@ -149,7 +151,7 @@ public class HospitalRegister extends AppCompatActivity {
                                     public void onComplete(@NonNull Task task) {
                                         if(task.isSuccessful()){
                                             Toast.makeText(HospitalRegister.this,"User Created.",Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(),HospitalScreen.class));
+                                            onBackPressed();
                                             loader.dismiss();
                                             finish();
                                         }else{

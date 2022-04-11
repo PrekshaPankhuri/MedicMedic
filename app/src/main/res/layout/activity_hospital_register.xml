@@ -28,6 +28,7 @@
                 android:layout_height="101dp">
 
                 <TextView
+                    android:id="@+id/messageMain"
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_width="84dp"
                     android:layout_height="83dp"
