@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
     DatabaseReference userDatabaseRef;
     ProgressDialog loader;
     String us="user";
-    TextView RegisterHos,AHaveAnacc;
+    TextView RegisterHos,AHaveAnacc, mainLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         userNumber=findViewById(R.id.RegMobile);
         userPassword=findViewById(R.id.RegPassword);
         userRegister=findViewById(R.id.cirRegisterButtonUser);
+        mainLabel = findViewById(R.id.mainLabel);
         fauth=FirebaseAuth.getInstance();
         loader=new ProgressDialog(this);
 
@@ -57,6 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
         if(ActNo == 1){
             AHaveAnacc.setVisibility(View.GONE);
             RegisterHos.setVisibility(View.GONE);
+            mainLabel.setText("Add New User");
         }
 
         userRegister.setOnClickListener(new View.OnClickListener() {
@@ -108,7 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     public void onComplete(@NonNull Task task) {
                                         if (task.isSuccessful()) {
                                             Toast.makeText(RegisterActivity.this, "User Created...!", Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                                            onBackPressed();
                                             loader.dismiss();
                                             finish();
                                         } else {

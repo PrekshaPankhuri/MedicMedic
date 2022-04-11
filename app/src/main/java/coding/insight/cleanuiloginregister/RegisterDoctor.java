@@ -126,7 +126,7 @@ public class RegisterDoctor extends AppCompatActivity {
                         public void onComplete(@NonNull Task task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(RegisterDoctor.this,"Doctor Added...!",Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                                onBackPressed();
                                 finish();
                             }
                             else{
