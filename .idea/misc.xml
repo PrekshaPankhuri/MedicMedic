@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91910/Downloads/First/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_hos_doctor_info_pop.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91910/Downloads/First/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/popup_update_hospital.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91910/Downloads/First/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/update_doc_popup.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91910/Downloads/First/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/update_popup.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/kdivy/AndroidStudioProjects/MedicMedic/app/src/main/res/layout/activity_hospital_register.xml" value="0.4" />
         <entry key="..\:/Users/kdivy/AndroidStudioProjects/MedicMedic/app/src/main/res/layout/activity_register.xml" value="0.4" />
       </map>
